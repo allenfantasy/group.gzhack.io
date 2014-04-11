@@ -1,11 +1,11 @@
 required:
   title:
     client: true
-    default: 'Discourse'
+    default: '2014广州创客马拉松'
   site_description: ''
-  contact_email: ''
-  notification_email: 'info@discourse.org'
-  site_contact_username: ''
+  contact_email: '' # TODO: gzhack support mail
+  notification_email: 'allen@dxhackers.com' # TODO: gzhack support mail
+  site_contact_username: 'Allen' # TODO: gzhack support contact
   logo_url:
     client: true
     default: '/images/d-logo-sketch.png'
@@ -25,7 +25,7 @@ required:
 
 basic:
   default_locale:
-    default: 'en'
+    default: 'zh_CN'
     enum: 'LocaleSiteSetting'
     refresh: true
   allow_user_locale:
@@ -114,12 +114,12 @@ users:
     client: true
     default: true
   enable_twitter_logins:
-    client: true
+    client: false
     default: true
   twitter_consumer_key: ''
   twitter_consumer_secret: ''
   enable_facebook_logins:
-    client: true
+    client: false
     default: true
   facebook_app_id: ''
   facebook_app_secret: ''
